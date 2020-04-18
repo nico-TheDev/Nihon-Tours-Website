@@ -1,6 +1,7 @@
 .features{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
     &--two{
         justify-content: space-around;
@@ -15,6 +16,7 @@
     background-color: rgba($white,0.8);
     padding: 2rem;
     border-radius: 1rem;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
