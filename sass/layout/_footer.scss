@@ -1,0 +1,42 @@
+.footer{
+    padding: 10rem 0 5rem 0;
+    background-color: $color-primary-dark-2;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left,&__right{
+        flex: 1;
+    }
+
+    &__logo{
+        flex-basis: 35%;
+        margin-bottom: 2rem;
+    }
+
+    &__img{
+        width: 20rem;
+        height: 10rem;
+    }
+
+    &__item{
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__link{
+        color:$color-primary-mid;
+        transition: all 300ms ease;
+        &:hover{
+            color: white;
+        }
+    }
+
+    .navigation__link{
+        font-size: 1.5rem;
+    }
+}
