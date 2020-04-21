@@ -9,6 +9,16 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include query(tabl){
+        font-size:55%;
+    }
+    @include query(tabp){
+        font-size:50%;
+    }
+    @include query(cp){
+        font-size:40%;
+    }
 }
 
 body{

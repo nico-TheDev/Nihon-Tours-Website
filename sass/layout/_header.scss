@@ -5,6 +5,10 @@
     background-size: cover;
     @include flexCenter;
 
+    @include query(cp){
+        height:70vh;
+    }
+
    &__main{
        @include flexCenter;
        flex-direction: column;

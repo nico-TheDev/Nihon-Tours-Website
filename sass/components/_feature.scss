@@ -24,6 +24,10 @@
     transition: all 500ms ease;
     margin-right: 2rem;
 
+    @include query(tabl){
+        margin-bottom: 2rem;
+    }
+
     & > *{
         margin-bottom: 2rem;
     }

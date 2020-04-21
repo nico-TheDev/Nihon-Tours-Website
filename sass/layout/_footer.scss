@@ -6,20 +6,43 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include query(cp){
+            flex-direction:column;
+            align-items:center;
+        
+        }
     }
 
     &__left,&__right{
         flex: 1;
+
+        @include query(cp){
+            flex:0;
+            text-align:center;
+        }
     }
 
+    &__left{
+        @include query(cp){
+            margin-bottom:5rem;
+        }
+    }
+
+  
     &__logo{
         flex-basis: 35%;
         margin-bottom: 2rem;
+        @include query(cp){
+          text-align:center;
+        }
     }
 
     &__img{
         width: 20rem;
         height: 10rem;
+
+      
     }
 
     &__item{

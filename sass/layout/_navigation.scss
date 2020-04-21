@@ -32,6 +32,10 @@
 
     &__list{
         flex: 2;
+
+        @include query(tabp){
+            display:none;
+        }
     }
 
     &__item{

@@ -13,6 +13,24 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 body {
   font-family: 'Poppins',sans-serif;
   font-weight: 400;
@@ -299,6 +317,21 @@ a {
           justify-content: space-between;
 }
 
+@media (max-width: 56.25em) {
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .card {
   width: 30rem;
   height: 44rem;
@@ -306,6 +339,12 @@ a {
   -webkit-perspective: 100rem;
           perspective: 100rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 56.25em) {
+  .card {
+    margin-bottom: 4rem;
+  }
 }
 
 .card__side {
@@ -454,6 +493,12 @@ a {
   margin-right: 2rem;
 }
 
+@media (max-width: 75em) {
+  .feature {
+    margin-bottom: 2rem;
+  }
+}
+
 .feature > * {
   margin-bottom: 2rem;
 }
@@ -492,6 +537,16 @@ a {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .testimony {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 .testimony::before {
   content: open-quote;
   display: block;
@@ -517,6 +572,12 @@ a {
   min-width: 11rem;
   height: auto;
   position: relative;
+}
+
+@media (max-width: 37.5em) {
+  .testimony__user {
+    margin-bottom: 2rem;
+  }
 }
 
 .testimony__user::before {
@@ -603,8 +664,20 @@ a {
           box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 37.5em) {
+  .signup-container {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4)), url(/img/sakura-1.jpg);
+  }
+}
+
 .signup {
   width: 50%;
+}
+
+@media (max-width: 37.5em) {
+  .signup {
+    width: 100%;
+  }
 }
 
 .signup__group {
@@ -615,8 +688,10 @@ a {
 .signup__title {
   display: inline-block;
   text-align: center;
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .signup__input {
@@ -625,6 +700,12 @@ a {
   padding: 1rem 2rem;
   border-radius: 1rem;
   border: 3px solid #ad2139;
+}
+
+@media (max-width: 37.5em) {
+  .signup__input {
+    width: 100%;
+  }
 }
 
 .signup__input:focus {
@@ -658,6 +739,15 @@ a {
           transform: translateY(-2rem);
 }
 
+@media (max-width: 37.5em) {
+  .signup button.btn {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
+}
+
 .header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/showcase.jpg);
@@ -672,6 +762,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    height: 70vh;
+  }
 }
 
 .header__main {
@@ -737,6 +833,12 @@ a {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+@media (max-width: 56.25em) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -814,16 +916,49 @@ a {
           align-items: center;
 }
 
+@media (max-width: 37.5em) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__left, .footer__right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
+@media (max-width: 37.5em) {
+  .footer__left, .footer__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .footer__left {
+    margin-bottom: 5rem;
+  }
+}
+
 .footer__logo {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 
 .footer__img {
@@ -855,6 +990,12 @@ a {
   padding: 15rem 0;
 }
 
+@media (max-width: 37.5em) {
+  .section-composition {
+    padding: 10rem 0;
+  }
+}
+
 .section-composition .section-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,11 +1007,28 @@ a {
       flex-wrap: wrap;
 }
 
+@media (max-width: 37.5em) {
+  .section-composition .section-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 .section-composition__left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 3rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-composition__left {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .section-composition__right {
@@ -890,9 +1048,23 @@ a {
   bottom: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .section-composition__right .two {
+    top: 0;
+    bottom: 0;
+  }
+}
+
 .section-composition__right .three {
   top: 5rem;
   right: 6rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-composition__right .three {
+    top: 0;
+    right: 0;
+  }
 }
 
 .section-composition__right .four {
@@ -900,9 +1072,23 @@ a {
   left: 5rem;
 }
 
+@media (max-width: 37.5em) {
+  .section-composition__right .four {
+    top: 0;
+    left: 0;
+  }
+}
+
 .section-composition__right .five {
   bottom: -5rem;
   left: 16rem;
+}
+
+@media (max-width: 37.5em) {
+  .section-composition__right .five {
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .section-composition__img {
@@ -913,6 +1099,12 @@ a {
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
   outline-offset: 1rem;
   position: absolute;
+}
+
+@media (max-width: 37.5em) {
+  .section-composition__img {
+    position: relative;
+  }
 }
 
 .section-composition__img:hover {
@@ -929,9 +1121,21 @@ a {
   background-size: cover;
 }
 
+@media (max-width: 37.5em) {
+  .section-features {
+    padding: 10rem 0;
+  }
+}
+
 .section-tours {
   padding: 15rem 0;
   background-size: cover;
+}
+
+@media (max-width: 37.5em) {
+  .section-tours {
+    padding: 10rem 0;
+  }
 }
 
 .section-testimonials {
@@ -940,9 +1144,21 @@ a {
   position: relative;
 }
 
+@media (max-width: 37.5em) {
+  .section-testimonials {
+    padding: 10rem 0;
+  }
+}
+
 .section-signup {
   padding: 15rem 0;
   background-color: rgba(231, 160, 174, 0.3);
+}
+
+@media (max-width: 37.5em) {
+  .section-signup {
+    padding: 10rem 0;
+  }
 }
 
 /*!

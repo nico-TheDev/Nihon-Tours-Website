@@ -12,6 +12,11 @@
     opacity: 1;
     margin-bottom: 2rem;
 
+    @include query(cp){
+        flex-direction:column;
+        text-align: center;
+    }
+
 
     &::before{
         content: open-quote;
@@ -37,6 +42,11 @@
         min-width: 11rem;
         height: auto;
         position: relative;
+
+        @include query(cp){
+            margin-bottom:2rem;
+        }
+
         &::before{
             content:"Joy Salunio";
             position: absolute;

@@ -2,6 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+
+    @include query(tabp){
+        justify-content:space-around;
+    }
+    @include query(cp){
+        justify-content:center;
+    }
 }
 
 .card{
@@ -10,6 +18,10 @@
     position: relative;
     perspective: 100rem;
     margin-bottom: 2rem;
+
+    @include query(tabp){
+        margin-bottom: 4rem;
+    }
 
     &__side{
         width: 100%;

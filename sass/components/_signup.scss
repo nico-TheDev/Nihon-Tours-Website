@@ -7,19 +7,32 @@
     padding:2rem 4rem;
     border-radius: 1rem;
     box-shadow: 1rem 1rem 3rem rgba($black,0.4);
+
+    @include query(cp){
+        background-image:linear-gradient(105deg,rgba($white,0.4) 0%,rgba($white,0.4)),url(/img/sakura-1.jpg);
+    }
 }
 
 .signup{
     width: 50%;
+
+    @include query(cp){
+        width:100%;
+    }
+
     &__group{
         max-width: 40rem;
         padding: 1rem;
     }
 
     &__title{
-        display: inline-block;
+        display:inline-block;
         text-align: center;
-        transform: translateX(1rem);
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+
+
     }
 
     &__input{
@@ -28,6 +41,10 @@
         padding: 1rem 2rem;
         border-radius: 1rem;
         border: 3px solid $color-primary-dark-1;
+
+        @include query(cp){
+            width:100%;
+        }
 
         &:focus{
             outline:none;
@@ -60,4 +77,13 @@
         opacity: 0;
         transform: translateY(-2rem);
     }
+
+    @include query(cp){
+        button.btn{
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%;
+        }
+    }
+    
 }

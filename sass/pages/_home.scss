@@ -1,15 +1,30 @@
 .section-composition{
     padding: 15rem 0;
 
+    @include query(cp){
+        padding:10rem 0;
+    }
+
     .section-container{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include query(cp){
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__left{
         flex: 1;
         margin-right: 3rem;
+
+        @include query(cp){
+            margin-right:0;
+            margin-bottom:4rem;
+
+        }
     }
 
     &__right{
@@ -23,18 +38,34 @@
         .two{
             top:3rem;
             bottom:2rem;
+            @include query(cp){
+                top:0;
+                bottom:0;              
+            }
         }
         .three{
             top:5rem;
             right:6rem;
+            @include query(cp){
+                top:0;
+                right:0;              
+            }
         }
         .four{
             bottom:0;
             left:5rem;
+            @include query(cp){
+                top:0;
+                left:0;              
+            }
         }
         .five{
             bottom:-5rem;
             left:16rem;
+            @include query(cp){
+                left:0;
+                bottom:0;              
+            }
         }
 
     }
@@ -46,6 +77,12 @@
         outline-offset: 1rem;
 
         position: absolute;
+
+        @include query(cp){
+          position:relative;
+        }
+
+        
 
         &:hover{
             transform: scale(1.2);
@@ -64,11 +101,19 @@
     padding: 15rem 0;
     background-image: linear-gradient(to right,rgba($color-primary-light-1,0.3),rgba($color-primary-light-2,0.3)),url(/img/sakura-2.jpg);
     background-size: cover;
+
+    @include query(cp){
+        padding:10rem 0;
+    }
 }
 
 .section-tours{
     padding: 15rem 0;
     background-size: cover;
+
+    @include query(cp){
+        padding:10rem 0;
+    }
 }
 
 
@@ -76,9 +121,17 @@
     padding: 15rem 0;
     background-color: pink;
     position: relative;
+
+    @include query(cp){
+        padding:10rem 0;
+    }
 }
 
 .section-signup{
     padding:15rem 0;
     background-color: rgba($color-primary-light-1,0.3);
+
+    @include query(cp){
+        padding:10rem 0;
+    }
 }
