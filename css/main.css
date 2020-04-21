@@ -344,6 +344,7 @@ a {
 @media (max-width: 56.25em) {
   .card {
     margin-bottom: 4rem;
+    margin-right: 2rem;
   }
 }
 
@@ -501,11 +502,6 @@ a {
 
 .feature > * {
   margin-bottom: 2rem;
-}
-
-.feature:hover .feature__icon {
-  -webkit-animation: wobble-hor-bottom 1s;
-          animation: wobble-hor-bottom 1s;
 }
 
 .feature:hover {
